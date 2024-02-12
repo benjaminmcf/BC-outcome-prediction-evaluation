@@ -1,0 +1,76 @@
+number of pos and neg BC results after data processing:  [0 1] [54 10]
+
+e.coli           3
+K.pneumoniae     2
+S.pyogenes       1
+S.aureus         1
+S.hominis        1
+S. bovis         1
+S.dysgalatiae    1
+Name: organism, dtype: int64
+
+********************
+Evaluating model: XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
+              colsample_bylevel=1, colsample_bynode=1, colsample_bytree=1,
+              early_stopping_rounds=None, enable_categorical=False,
+              eval_metric=None, gamma=0, gpu_id=-1, grow_policy='depthwise',
+              importance_type=None, interaction_constraints='',
+              learning_rate=0.01, max_bin=256, max_cat_to_onehot=4,
+              max_delta_step=0, max_depth=3, max_leaves=0, min_child_weight=1,
+              missing=nan, monotone_constraints='()', n_estimators=1000,
+              n_jobs=0, num_parallel_tree=1, predictor='auto',
+              random_state=802313894, reg_alpha=0, reg_lambda=1, ...)
+Index(['[NE-SFL(ch)]', '[NE-FSC(ch)]', '[NE-WY]', '[MO-WY]', '[MO-WZ]',
+       'IP SUS(WBC)Left Shift?', 'RDW-CV(%)', 'MONO%(%)', 'BASO%(%)', 'EO%(%)',
+       'LYMPH%(%)', 'NEUT%(%)', 'MONO#(10^9/L)', 'LYMPH#(10^9/L)',
+       'NEUT#(10^9/L)', 'NLR'],
+      dtype='object')
+
+AUC -> 0.841
+
+AUC-PRC -> 0.5427254947494886
+
+Confusion Matrix - threshold 0.5
+[[28 26]
+ [ 2  8]]
+
+TN: 28
+FN: 2
+TP: 8
+FP: 26
+
+Sensitivity: 0.800
+Specificity: 0.519
+Negative Predictive Value: 0.933
+Positive Predictive Value: 0.235
+
+********************
+Evaluating model: RandomForestClassifier(class_weight={0: 0.5410005920663115,
+                                     1: 6.597472924187725},
+                       max_depth=3, n_estimators=1000, n_jobs=-1,
+                       random_state=RandomState(MT19937) at 0x258956E3040)
+Index(['RDW-CV(%)', 'PLT(10^9/L)', 'HGB(g/L)', 'RBC(10^12/L)', 'WBC(10^9/L)',
+       'MONO%(%)', 'BASO%(%)', 'EO%(%)', 'LYMPH%(%)', 'NEUT%(%)',
+       'BASO#(10^9/L)', 'MONO#(10^9/L)', 'EO#(10^9/L)', 'LYMPH#(10^9/L)',
+       'NEUT#(10^9/L)', 'NLR', 'MLR'],
+      dtype='object')
+
+AUC -> 0.87
+
+AUC-PRC -> 0.4774563181916123
+
+Confusion Matrix - threshold 0.5
+[[31 23]
+ [ 0 10]]
+
+TN: 31
+FN: 0
+TP: 10
+FP: 23
+
+Sensitivity: 1.000
+Specificity: 0.574
+Negative Predictive Value: 1.000
+Positive Predictive Value: 0.303
+
+

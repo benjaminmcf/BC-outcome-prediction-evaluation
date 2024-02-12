@@ -1,0 +1,16 @@
+[NE-SFL(ch)]
+[NE-FSC(ch)]
+[NE-WY]
+[MO-WY]
+[MO-WZ]
+IP SUS(WBC)Left Shift?
+RDW-CV(%)
+MONO%(%)
+BASO%(%)
+EO%(%)
+LYMPH%(%)
+NEUT%(%)
+MONO#(10^9/L)
+LYMPH#(10^9/L)
+NEUT#(10^9/L)
+NLR
