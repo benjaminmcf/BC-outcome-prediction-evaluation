@@ -284,18 +284,10 @@ def main():
     data_p1 = pd.read_csv('../DATA/PROCESSED_DATA/P1_PROCESSED.csv')
 
     unique,counts = np.unique(data_p1['ispos'],return_counts=True)
-
-    # assert len(data_p1) == 17   
-    # assert counts[0] == 14
-    # assert counts[1] == 3
         
 
     data_p2 = pd.read_csv('../DATA/PROCESSED_DATA/P2_PROCESSED.csv')
     unique,counts = np.unique(data_p2['ispos'],return_counts=True)
-
-    # assert len(data_p2) == 47
-    # assert counts[0] == 40
-    # assert counts[1] == 7
 
 
     data_joined = pd.concat([data_p1, data_p2])
