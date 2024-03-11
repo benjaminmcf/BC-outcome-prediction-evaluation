@@ -1,5 +1,13 @@
 # BC-outcome-prediction-evaluation
 
+## For the paper "Evaluation of machine learning pipeline for blood culture outcome prediction on prospectively collected data in Western Australian emergency department"
+
+
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+
 ## Set up the environment
 
 #### ** It is important that you are using python 3.10.5 **
