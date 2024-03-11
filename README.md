@@ -39,7 +39,8 @@ This will run the evaluation.py and statistics.py scripts and output the results
 
 ```bash
 cd scripts
-python evaluation.py > output_files/evaluation.txt && statistics.py > output_files/statistics.txt
+python evaluation.py > output_files/evaluation.txt
+python statistics.py > output_files/statistics.txt
 ```
 
 ## Running the Code Manually
